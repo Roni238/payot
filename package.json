@@ -1,0 +1,28 @@
+{
+  "name": "nuxt-app",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --host",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.17.0",
+    "@nuxt/content": "^3.12.0",
+    "@nuxt/image": "^1.11.0",
+    "@vueuse/core": "^14.2.1",
+    "better-sqlite3": "^12.6.2",
+    "libsql": "^0.5.22",
+    "nuxt": "^4.1.1",
+    "nuxt-studio": "^1.4.0",
+    "vue": "^3.5.21",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "sass": "^1.92.1",
+    "sass-loader": "^16.0.5"
+  }
+}

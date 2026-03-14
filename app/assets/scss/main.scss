@@ -1,0 +1,91 @@
+@use "./_variables.scss" as *;
+@use "./_mixins.scss" as *;
+
+@font-face {
+  font-family: 'TT Commons';
+  src: url('~/assets/fonts/TTCommons-Regular.woff2') format('woff2');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $main-font;
+
+}
+
+body {
+  color: $black-color;
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+  color: $black-color;
+}
+
+button{
+  border: none;
+  cursor: pointer;
+  padding: 12px 28px;
+
+  @include tablet {
+    padding: 16px 32px;
+  }
+  @include laptop {
+    padding: 20px 48px;
+  }
+}
+
+h1{
+  font-size: 32px;
+  font-weight: 400;
+  @include tablet {
+    font-size: 48px;
+  }
+  @include laptop {
+    font-size: 84px;
+  }
+}
+
+h2{
+  font-size: 28px;
+  font-weight: 400;
+  
+  @include tablet {
+    font-size: 42px;
+  }
+  @include laptop {
+    font-size: 56px;
+  }
+}
+
+h3{
+  font-size: 24px;
+  font-weight: 400;
+
+  @include tablet {
+    font-size: 28px;
+  }
+  @include laptop {
+    font-size: 32px;
+  }
+}
+
+h4{
+  
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 124%;
+
+  @include tablet {
+    font-size: 24px;
+  }
+  @include laptop {
+    font-size: 28px;
+  }
+}
