@@ -10,7 +10,7 @@ const itemsPerPage = ref(4)
 onMounted(() => {
   const updateSize = () => {
     const width = window.innerWidth
-    window.innerWidth >= 1280 ? 4 : window.innerWidth >= 640 ? 2 : 1
+    itemsPerPage.value = width >= 1280 ? 4 : width >= 640 ? 2 : 1
   }
   
   updateSize()

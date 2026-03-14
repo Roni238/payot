@@ -39,6 +39,13 @@ const { data: article }= await useAsyncData(`article-${articleId}`, () =>
     .first()
 )
 
+useSeoMeta({
+  title: () => article.value?.title ? `Payot | ${article.value.title}` : 'Payot | Loading...',
+  ogTitle: () => article.value?.title ? `Payot | ${article.value.title}` : 'Payot',
+  description: article.value?.description || '',
+  ogDescription: article.value?.description || '',
+  ogImage: () => article.value?.image || ''
+})
 </script>
 
 <style lang="scss" scoped>
